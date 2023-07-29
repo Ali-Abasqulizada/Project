@@ -1,0 +1,7 @@
+@mixin position ($direction, $row, $column, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $row;
+    align-items: $column;
+    flex-wrap: $wrap;
+}

@@ -1,0 +1,247 @@
+main {
+    width: 100%;
+
+    .containerI {
+        background-color: #1C1E53;
+        min-height: 700px;
+        @include position (row, space-evenly, center, wrap);
+
+        .containerI-sectionI {
+            border: 3px solid white;
+            border-radius: 20px;
+            animation: containerI-sectionI 5s linear infinite normal;
+
+            @keyframes containerI-sectionI {
+                0% {
+                    border-color: blue;
+                }
+
+                33% {
+                    border-color: red;
+                }
+
+                66% {
+                    border-color: green;
+                }
+
+                100% {
+                    border-color: blue;
+                }
+            }
+
+            p {
+                color: white;
+                max-width: 582px;
+                padding: 20px;
+            }
+
+            .textI {
+                font-size: 54px;
+                font-weight: 600;
+            }
+
+            .textII {
+                font-size: 16px;
+            }
+        }
+
+        .containerI-sectionII {
+            width: 40%;
+
+            img {
+                width: 100%;
+                animation: containerI-sectionII 3s linear infinite normal;
+
+                @keyframes containerI-sectionII {
+                    0% {
+                        transform: skew(1deg);
+                    }
+
+                    25% {
+                        transform: skew(-1deg);
+                    }
+
+                    50% {
+                        transform: skew(1deg);
+                    }
+
+                    75% {
+                        transform: skew(-1deg);
+                    }
+
+                    100% {
+                        transform: skew(1deg);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .containerII {
+        @include position (column, space-around, center, null);
+        width: 100%;
+        min-height: 80vh;
+
+        .header {
+            font-size: 48px;
+            font-weight: 600;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        .containerII-section {
+            @include position (row, space-between, center, wrap);
+            width: 85%;
+
+            .card {
+                max-width: 400px;
+                height: 320px;
+                padding: 40px;
+                background: var(--grey, #F4F6FC);
+
+                .textI {
+                    color: var(--dark-blue, #282938);
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+
+                .textII {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .containerIII {
+        background: #EEF4FA;
+        min-height: 1000px;
+        @include position (column, space-evenly, center, null);
+
+        .containerIII-sectionI {
+            width: 80%;
+            @include position (row, space-between, center, wrap);
+
+            span {
+                .textII {
+                    max-width: 600px;
+                    margin-top: 20px;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                .textIII {
+                    margin-top: 20px;
+                    max-width: 630px;
+                    opacity: 0.699999988079071;
+                }
+            }
+
+            img {
+                width: 40%;
+            }
+        }
+
+        .containerIII-sectionII {
+            width: 80%;
+            @include position (row, space-between, center, wrap);
+
+            img {
+                width: 40%;
+            }
+
+            span {
+                .textII {
+                    max-width: 600px;
+                    margin-top: 20px;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                .textIII {
+                    margin-top: 20px;
+                    max-width: 630px;
+                    opacity: 0.699999988079071;
+                }
+            }
+        }
+    }
+
+    .containerIV {
+        min-height: 80vh;
+        width: 100%;
+        @include position (row, space-around, flex-start, wrap);
+
+        .containerIV-sectionI {
+            margin-top: 50px;
+            .textI {
+                max-width: 310px;
+                font-size: 38px;
+                font-weight: 600;
+            }
+        }
+
+        .containerIV-sectionII {
+            width: 50%;
+            .question {
+                @include position (row, space-between, flex-start, wrap);
+                margin-top: 50px;
+                margin-bottom: 50px;
+                .textI {
+                    color: var(--royal-blue, #2405F2);
+                    font-size: 24px;
+                }
+
+                .section {
+                    .textII {
+                        font-size: 24px;
+                        max-width: 355px;
+                    }
+                    .minusI{
+                        display: none;
+                        max-width: 500px;
+                    }
+                    .minusI.plus{
+                        display: block;
+                    }
+                    .minusII{
+                        display: none;
+                        max-width: 500px;
+                    }
+                    .minusII.plus{
+                        display: block;
+                    }
+                    .minusIII{
+                        display: none;
+                        max-width: 500px;
+                    }
+                    .minusIII.plus{
+                        display: block;
+                    }
+                    .minusIV{
+                        display: none;
+                        max-width: 500px;
+                    }
+                    .minusIV.plus{
+                        display: block;
+                    }
+                    .minusV{
+                        display: none;
+                        max-width: 500px;
+                    }
+                    .minusV.plus{
+                        display: block;
+                    }
+                }
+                .x{
+                    @include position (row, center, center, null);
+                    width: 60px;
+                    height: 60px;
+                    color: green;
+                }
+            }
+        }
+    }
+
+}

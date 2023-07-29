@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Sass/ContactUs.css" />
+  </head>
+  <body>
+    <header>
+      <p>{Finsweet}</p>
+      <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./About us.html">About us</a></li>
+        <li><a href="./Features.html">Features</a></li>
+        <li><a href="./Pricing.html">Pricing</a></li>
+        <li><a href="./FAQ.html">FAQ</a></li>
+        <li><a href="./Blog.html">Blog</a></li>
+      </ul>
+    </header>
+    <main>
+      <p class="textI">Contact Us</p>
+      <p class="textII">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore.
+      </p>
+      <div class="container">
+        <div class="contact">
+          <form>
+            <div class="nameDiv" id="a">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="x" class="nameI" required />
+              <label id="y" class="nameII">Name</label>
+            </div>
+            <div class="passwordDiv" id="a">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="x" class="passwordI" required />
+              <label id="y" class="passwordII">Password</label>
+            </div>
+            <div class="emailDiv" id="a">
+              <i class="fa-solid fa-phone"></i>
+              <input type="number" id="x" class="numberI" required />
+              <label id="y" class="numberII">Phone</label>
+            </div>
+            <div class="messageDiv" id="a">
+              <i class="fa-solid fa-envelope"></i>
+              <textarea class="messageI" id="x" rows="10" required></textarea>
+              <label id="y" class="messageII">Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        let form = document.querySelector("form");
+        form.addEventListener("submit", (x) => {
+          alert("REQUEST SENT")
+        });
+      </script>
+    </main>
+    <footer>
+      <div class="containerI">
+        <div class="containerI-sectionI">
+          <p class="textI">{Finsweet}</p>
+          <p class="textII">
+            We are always open to discuss your project and improve your online
+            presence.
+          </p>
+          <div class="contact">
+            <span>
+              <p class="contactI">Email me at</p>
+              <p class="contactII">ali.abasqulu@gmail.com</p>
+            </span>
+            <span>
+              <p class="contactI">Call us</p>
+              <p class="contactII">+994 55 621 56 89</p>
+            </span>
+          </div>
+        </div>
+        <div class="containerI-sectionII">
+          <p class="textI">Lets Talk!</p>
+          <p class="textII">
+            We are always open to discuss your project, improve your online
+            presence and help with your UX/UI design challenges.
+          </p>
+          <span>
+            <a href="#"><img src="./Images/Facebook.svg" alt="Facebook" /></a>
+            <a
+              href="https://twitter.com/abasqulizaAli?t=9s3lNSsL3tL51_xkYCCdlA&s=08"
+              ><img src="./Images/Twitter.svg" alt="Twitter"
+            /></a>
+            <a href="https://instagram.com/abasqulizade?igshid=MzNlNGNkZWQ4Mg=="
+              ><img src="./Images/Instagram.svg" alt="Instagram"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/%C9%99li-abasqulizad%C9%99-671a64272"
+              ><img src="./Images/Linkedin.svg" alt="Linkedin"
+            /></a>
+          </span>
+        </div>
+      </div>
+      <div class="containerII">
+        <p class="textI">Copyright 2022, Finsweet.com</p>
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./About us.html">About us</a></li>
+          <li><a href="./Features.html">Features</a></li>
+          <li><a href="./Pricing.html">Pricing</a></li>
+          <li><a href="./FAQ.html">FAQ</a></li>
+          <li><a href="./Blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

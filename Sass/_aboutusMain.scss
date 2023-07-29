@@ -1,0 +1,109 @@
+main {
+    .containerI {
+        @include position (row, space-around, center, wrap);
+        min-height: 600px;
+
+        span {
+            .textII {
+                max-width: 500px;
+                font-size: 54px;
+                font-weight: 600;
+            }
+
+            .textIII {
+                margin-top: 30px;
+                max-width: 500px;
+            }
+        }
+
+        .section {
+            max-width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .containerII {
+        @include position (column, center, center, wrap);
+        min-height: 1000px;
+
+        .containerII-sectionI {
+            @include position (row, space-around, center, wrap);
+            min-height: 400px;
+            width: 85%;
+            background: #F4F5F5;
+
+            span {
+                .textII {
+                    margin-top: 20px;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                .textIII {
+                    margin-top: 30px;
+                    opacity: 0.699999988079071;
+                    max-width: 520px;
+                }
+            }
+        }
+
+        img {
+            max-width: 85%;
+        }
+    }
+
+    .containerIII {
+        background: #EEF4FA;
+        min-height: 1000px;
+        @include position (column, space-evenly, center, null);
+
+        .containerIII-sectionI {
+            width: 80%;
+            @include position (row, space-between, center, wrap);
+
+            span {
+                .textII {
+                    margin-top: 20px;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                .textIII {
+                    margin-top: 20px;
+                    max-width: 630px;
+                    opacity: 0.699999988079071;
+                }
+            }
+
+            img {
+                width: 40%;
+            }
+        }
+
+        .containerIII-sectionII {
+            width: 80%;
+            @include position (row, space-between, center, wrap);
+
+            img {
+                width: 40%;
+            }
+
+            span {
+                .textII {
+                    margin-top: 20px;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                .textIII {
+                    margin-top: 20px;
+                    max-width: 630px;
+                    opacity: 0.699999988079071;
+                }
+            }
+        }
+    }
+}

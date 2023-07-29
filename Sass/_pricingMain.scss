@@ -1,0 +1,175 @@
+main {
+    .headerI {
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .headerII {
+        max-width: 560px;
+        opacity: 0.699999988079071;
+        margin: 0 auto;
+    }
+
+    .containerI {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        gap: 20px;
+        @include position (row, center, center, wrap);
+
+        .cards {
+            @include position (column, space-evenly, flex-start, wrap);
+            min-height: 750px;
+            border-radius: 12px;
+            max-width: 400px;
+            padding: 40px;
+
+            .textI {
+                font-size: 38px;
+                font-weight: 600;
+            }
+
+            .textII {
+                font-size: 24px;
+            }
+
+            .textIII {
+                opacity: 0.699999988079071;
+            }
+
+            .order {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                @include position (row, flex-start, center, wrap);
+            }
+
+            .button {
+                align-self: center;
+                font-size: 16px;
+                width: 250px;
+                height: 60px;
+                border: 2px solid #F4F6FC33;
+                border-radius: 30px;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background-color: white;
+                    color: red;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .cardI {
+            background-color: #F4F6FC;
+
+            .buttonI {
+                color: white;
+                background-color: #282938;
+            }
+        }
+
+        .cardII {
+            color: white;
+            background: #1C1E53;
+
+            .buttonII {
+                color: #282938;
+                border-radius: 41px;
+                background-color: #FCD980;
+            }
+        }
+    }
+
+    .containerIV {
+        min-height: 80vh;
+        width: 100%;
+        @include position (row, space-around, flex-start, wrap);
+
+        .containerIV-sectionI {
+            margin-top: 50px;
+
+            .textI {
+                max-width: 400px;
+                font-size: 48px;
+                font-weight: 600;
+            }
+        }
+
+        .containerIV-sectionII {
+            width: 50%;
+
+            .question {
+                @include position (row, space-between, flex-start, wrap);
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+                .textI {
+                    color: var(--royal-blue, #2405F2);
+                    font-size: 24px;
+                }
+
+                .section {
+                    .textII {
+                        font-size: 24px;
+                        max-width: 355px;
+                    }
+
+                    .minusI {
+                        display: none;
+                        max-width: 500px;
+                    }
+
+                    .minusI.plus {
+                        display: block;
+                    }
+
+                    .minusII {
+                        display: none;
+                        max-width: 500px;
+                    }
+
+                    .minusII.plus {
+                        display: block;
+                    }
+
+                    .minusIII {
+                        display: none;
+                        max-width: 500px;
+                    }
+
+                    .minusIII.plus {
+                        display: block;
+                    }
+
+                    .minusIV {
+                        display: none;
+                        max-width: 500px;
+                    }
+
+                    .minusIV.plus {
+                        display: block;
+                    }
+
+                    .minusV {
+                        display: none;
+                        max-width: 500px;
+                    }
+
+                    .minusV.plus {
+                        display: block;
+                    }
+                }
+
+                .x {
+                    @include position (row, center, center, null);
+                    width: 60px;
+                    height: 60px;
+                    color: green;
+                }
+            }
+        }
+    }
+}

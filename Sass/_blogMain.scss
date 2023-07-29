@@ -1,0 +1,39 @@
+main {
+    width: 100%;
+    @include position (column, center, center, wrap);
+    gap: 50px;
+    .header {
+        font-size: 48px;
+        font-weight: 600;
+        max-width: 950px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .imgI {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        @include position (column, center, flex-start, wrap);
+        gap: 20px;
+        margin-bottom: 50px;
+        max-width: 850px;
+        .textI {
+            font-size: 38px;
+            font-weight: 600;
+        }
+        .textIII{
+            font-size: 38px;
+            font-weight: 600;
+        }
+        .textV{
+            font-size: 38px;
+            font-weight: 600;
+        }
+        .imgII{
+            width: 100%;
+        }
+    }
+}

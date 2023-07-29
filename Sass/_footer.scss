@@ -1,0 +1,95 @@
+footer{
+    .containerI{
+        @include position (row, space-evenly, flex-end, wrap);
+        background: #1C1E53;
+        .containerI-sectionI{
+            width: 40%;
+            min-height: 400px;
+            @include position (column, flex-end, flex-start, wrap);
+            .textI{
+                color: white;
+                font-size: 30px;
+                font-weight: 600;
+                transition-duration: 0.5s;
+                &:hover{
+                    color: red
+                }
+            }
+            .textII{
+                margin-top: 50px;
+                color: white;
+                max-width: 400px;
+                opacity: 0.800000011920929;
+            }
+            .contact{
+                width: 100%;
+                margin-top: 50px;
+                @include position (row, space-evenly, center, wrap);
+                background: #FCD980;
+                span{
+                    padding: 20px;
+                    .contactI{
+                        margin: 10px;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    .contactII{
+                        color: #282938;
+                    }
+                }
+            }
+        }
+        .containerI-sectionII{
+            @include position (column, center, flex-start, wrap);
+            min-height: 400px;
+            width: 40%;
+            .textI{
+                font-size: 48px;
+                font-weight: 600;
+                color:white;
+            }
+            .textII{
+                margin-top: 20px;
+                color:white;
+                opacity: 0.800000011920929;
+                max-width: 400px;
+            }
+            span{
+                a{
+                    img{
+                        margin: 20px 20px 20px 0px;
+                    }
+                }
+            }
+        }
+    }
+    .containerII{
+        min-height: 100px;
+        @include position (row, space-around, center, wrap);
+        .textI{
+            color:#282938;
+        }
+        ul{
+            @include position (row, null, center, wrap);
+            li{
+                width: 100px;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                transition-duration: 0.5s;
+                a{
+                    color: black;
+                    transition-duration: 0.5s;
+                }
+                &:hover{
+                    background-color: black;
+                    a{
+                        color: white
+                    }
+                }
+            }
+        }
+        
+
+    }
+}

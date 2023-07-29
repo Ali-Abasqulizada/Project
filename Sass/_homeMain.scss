@@ -1,0 +1,273 @@
+main {
+    width: 100%;
+
+    .containerI {
+        background-color: #1C1E53;
+        min-height: 700px;
+        @include position (row, space-evenly, center, wrap);
+
+        .containerI-sectionI {
+            border: 3px solid white;
+            border-radius: 20px;
+            animation: containerI-sectionI 5s linear infinite normal;
+
+            @keyframes containerI-sectionI {
+                0% {
+                    border-color: blue;
+                }
+
+                33% {
+                    border-color: red;
+                }
+
+                66% {
+                    border-color: green;
+                }
+
+                100% {
+                    border-color: blue;
+                }
+            }
+
+            p {
+                color: white;
+                max-width: 582px;
+                padding: 20px;
+            }
+
+            .textI {
+                font-size: 54px;
+                font-weight: 600;
+            }
+
+            .textII {
+                font-size: 16px;
+            }
+        }
+
+        .containerI-sectionII {
+            width: 40%;
+
+            img {
+                width: 100%;
+                animation: containerI-sectionII 3s linear infinite normal;
+
+                @keyframes containerI-sectionII {
+                    0% {
+                        transform: skew(1deg);
+                    }
+
+                    25% {
+                        transform: skew(-1deg);
+                    }
+
+                    50% {
+                        transform: skew(1deg);
+                    }
+
+                    75% {
+                        transform: skew(-1deg);
+                    }
+
+                    100% {
+                        transform: skew(1deg);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .containerII {
+        background-color: #F4F6FC;
+        min-height: 700px;
+        @include position (row, space-evenly, center, wrap);
+
+        .containerII-sectionI {
+            max-width: 500px;
+
+            p {
+                padding: 12px;
+            }
+
+            .textI {
+                font-weight: 600;
+                font-size: 48px;
+                color: #282938;
+            }
+
+            .textIII {
+                color: #2405F2;
+            }
+        }
+
+        #containerII-sectionII-III {
+            max-width: 320px;
+
+            p {
+                padding: 12px;
+            }
+
+            .textI {
+                color: #282938;
+                font-size: 32px;
+                font-weight: 600;
+            }
+
+            img {
+                padding: 12px;
+                transition-duration: 1s;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+
+    .containerIII {
+        min-height: 800px;
+        width: 80%;
+        margin: 0 auto;
+        @include position (row, center, center, wrap);
+
+        .containerIII-partI {
+            border-radius: 20px;
+            @include position (column, flex-start, center, wrap);
+            background-image: url(../Images/woman-writing-on-paper-3228878.svg);
+            background-position: center;
+            object-fit: fill;
+            width: 50%;
+            min-height: 691px;
+
+            .containerIII-partI-textI {
+                color: white;
+                margin-top: 50px;
+                font-weight: 600;
+                font-size: 54px;
+                max-width: 464px;
+            }
+
+            .containerIII-partI-textII {
+                color: white;
+                max-width: 464px;
+            }
+        }
+
+        .containerIII-partII {
+            border-radius: 20px;
+            @include position (column, flex-start, center, wrap);
+            background-image: url(../Images/Background.svg);
+            width: 50%;
+            min-height: 691px;
+
+            .containerIII-partII-textI {
+                margin-top: 50px;
+                max-width: 450px;
+                font-size: 32px;
+                color: white;
+                font-weight: 600;
+            }
+
+            .containerIII-partII-textII {
+                color: white;
+                max-width: 450px;
+            }
+
+            form {
+                width: 80%;
+
+                input {
+                    color: white;
+                    margin-top: 20px;
+                    padding: 18px;
+                    width: 100%;
+                    border-radius: 8px;
+                    background: #1C1E53;
+                    border: 1.5px solid grey;
+                }
+
+                input::placeholder {
+                    color: grey;
+                }
+
+                .containerIII-button {
+                    font-size: 18px;
+                    margin-top: 30px;
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 41px;
+                    background: #FCD980;
+                }
+            }
+
+            .containerIII-partII-textIII {
+                color: white;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .containerIV {
+        min-height: 800px;
+        background-color: #F4F6FC;
+        @include position (column, space-around, center, null);
+
+        .containerIV-text {
+            .textI {
+                color: red;
+                font-size: 24px;
+                text-align: center;
+                margin: 20px;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+
+            .textII {
+                margin: 20px;
+                font-weight: 600;
+                font-size: 48px;
+                max-width: 630px;
+                text-align: center;
+            }
+        }
+
+        .containerIV-mainCard {
+            @include position (row, space-evenly, null, wrap);
+
+            #cards {
+                border: 2px solid red;
+                box-shadow: 2px 2px 2px red;
+                border-radius: 40px;
+                transition-duration: 1s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                margin: 20px;
+                max-width: 405px;
+                background-color: white;
+                padding: 20px;
+
+                img {
+                    margin: 10px;
+                    transition-duration: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+
+                .cards-textI {
+                    margin: 10px;
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+
+                .cards-textII {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../Images/rm222-mind-16_1.jpg);
+    background-size: cover;
+
+    .textI {
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .textII {
+        opacity: 0.699999988079071;
+        max-width: 570px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container {
+        @include position (row, center, center, wrap);
+        width: 100%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+
+        .contact {
+            width: 600px;
+            background-color: red;
+            padding: 20px;
+            border-radius: 20px;
+            background: transparent;
+            border: 2px solid #1C1E53;
+            backdrop-filter: blur(15px);
+            form{
+                @include position (column, center, center, null);
+                width: 100%;
+            }
+
+            #a {
+                width: 80%;
+                margin: 20px;
+                position: relative;
+                text-align: right;
+
+                i {
+                    color: #1C1E53;
+                    font-size: 18px;
+                    position: absolute;
+                    top: 12px;
+                    left: 20px;
+                    transition-duration: 0.2s;
+                }
+
+                i:hover {
+                    transform: scale(1.2);
+                }
+
+                #x {
+                    background: transparent;
+                    outline: none;
+                    border: 1.5px solid grey;
+                    width: 90%;
+                    padding: 10px;
+                    border-radius: 10px;
+                    font-size: 16px;
+                }
+
+                #y {
+                    position: absolute;
+                    left: 60px;
+                    top: 10px;
+                    transition-duration: 0.5s;
+                    font-size: 18px;
+                }
+
+                #x:focus~#y,
+                #x:valid~#y {
+                    top: -25px;
+                }
+
+                #y {
+                    user-select: none;
+                }
+            }
+        }
+
+        button {
+            color: white;
+            background-color: #1C1E53;
+            font-size: 16px;
+            width: 230px;
+            height: 60px;
+            border: 2px solid #F4F6FC33;
+            border-radius: 30px;
+            transition-duration: 0.5s;
+
+            &:hover {
+                background-color: white;
+                transform: scale(1.1);
+                color: red;
+            }
+        }
+    }
+}
